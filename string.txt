@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var inputString = prompt("Enter the string:");
+    var inputNumber = parseInt(prompt("Enter the number:"));
+
+if (!isNaN(inputNumber)) {
+  
+  for (var i = 0; i < inputNumber; i++) {
+    console.log(inputString);
+  }
+ console.log(inputString + " in javascript");
+} else {
+  console.log("Invalid number input.");
+}
+
+</script>
+</html>
