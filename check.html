@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Name</title>
+</head>
+<body>
+
+<h1>Check If a Name is in the Array</h1>
+
+<p>Enter a name to check if it's in the array:</p>
+
+<input type="text" id="nameInput">
+<button onclick="checkName()">Check</button>
+
+<p id="result"></p>
+
+<script>
+    // Define the array of names
+    var namesArray = ["sri", "devi", "sauda", "jyothi", "praisy", "lalitha", "durga", "manu", "mani", "akshaya"];
+
+    function checkName() {
+        // Get the input value
+        var nameToCheck = document.getElementById("nameInput").value;
+
+        // Check if the name is in the array
+        if (namesArray.includes(nameToCheck)) {
+            document.getElementById("result").innerHTML = nameToCheck + " is in the array.";
+        } else {
+            document.getElementById("result").innerHTML = nameToCheck + " is not in the array.";
+        }
+    }
+</script>
+
+</body>
+</html>
